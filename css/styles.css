@@ -1,0 +1,219 @@
+* {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:root {
+    --background: #0099FF;
+    --text-color: #FFFFFF; 
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #82CDFF;
+    max-height: 60vh;
+    height: 100%;
+    margin: 100px;
+    scale: 0.7;
+
+}
+
+.scoreboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 56px;
+}
+
+.win-text-box {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 430px;
+    height: 74px;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.win-text {
+    font-size: 33px;
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+}
+
+.score-box {
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 949px;
+    height: 148px;
+    border-radius: 17px;
+
+}
+
+.player-label {
+    font-size: 38px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.score-value {
+    width: 131px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-color);
+    border-radius: 17px;
+    font-size: 104px;
+    color: var(--background);
+    font-weight: 900;
+    padding-bottom: 9px;
+    box-sizing: border-box ;
+}
+
+
+.small-vs {
+    font-size: 58px;
+    font-weight: 900;
+    color: var(--text-color);
+    margin: 0 20px;
+}
+
+.battle-field {
+    display: flex;
+    height: 414px;
+    margin-bottom: 22px;
+}
+
+.game-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin: 0 19px 0 19px;
+}
+
+.button {
+    width: 220px;
+    height: 80px;
+    font-size: 44px;
+    font-weight: 600;
+    color: var(--text-color);
+    background-color: var(--background);
+    border: none;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding-bottom: 12px ;
+    cursor: pointer;
+    transition: 300ms;
+    box-shadow: 2px 2px 5px 1px #000000 ;
+}
+
+.button:hover {
+   filter:brightness(1.2);
+}
+
+.button:active {
+    border: 1px solid var(--background);
+    background-color: transparent;
+    color: var(--background);
+    box-shadow: 1px 1px 1px #000000;
+    transform: translateY(5px);
+}
+
+.button-active {
+    border: 1px solid var(--background);
+    background-color: transparent;
+    color: var(--background);
+    box-shadow: 1px 1px 1px #000000;
+    transform: translateY(5px);
+}
+
+
+.game-field {
+    width: 1313px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--background);
+    border-radius: 17px;
+    box-sizing: border-box;
+    padding: 35px;
+}
+
+.play {
+    width: 464px;
+    height: 345px;
+    background-color: var(--text-color);
+    border-radius: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.move-image {
+    width: 70%;
+}
+
+.player2-gamefield {
+    transform: scalex(-1);
+}
+
+
+.big-vs {
+    font-size: 104px;
+    font-weight: 900;
+    color: var(--text-color);
+    padding-bottom: 70px;
+    box-sizing: border-box;
+}
+
+.reset-button {
+    margin-left: 101px;
+}
+
+@keyframes startbutton {
+    0% {
+        border-left: 1px solid transparent;
+        border-top: 1px solid var(--background);
+    }
+
+    25% {
+        border-top: 1px solid transparent;
+        border-right: 1px solid var(--background);
+    }
+
+    50% {
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid var(--background);
+    }
+
+    75% {
+        border-bottom: 1px solid transparent;
+        border-left: 1px solid var(--background);
+    }
+
+    100% {
+        border-left: 1px solid transparent;
+        border-top: 1px solid var(--background);
+    }
+}
+.start {
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 2em var(--background), 0 0 2em var(--background);
+    animation-name: startbutton;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+}

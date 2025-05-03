@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Joquempô</title>
+  </head>
+  <body>
+    <section class="scoreboard">
+      <div class="win-text-box">
+        <label class="win-text">Clique em 'Iniciar' para começar!</label>
+      </div>
+      <div class="score-box">
+        <span class="player-label">Jogador</span>
+        <label class="score-value scorePlayer1">00</label>
+        <strong class="small-vs">VS</strong>
+        <label class="score-value scorePlayer2">00</label>
+        <span class="player-label">Computador</span>
+      </div>
+    </section>
+    <section class="battle-field">
+      <div class="game-buttons">
+        <button class="play-button button player1-stone-button">Pedra</button>
+        <button class="play-button button player1-paper-button">Papel</button>
+        <button class="play-button button player1-scissors-button">Tesoura</button>
+      </div>
+      <div class="game-field">
+        <div class="play player1-gamefield"></div>
+        <label for="" class="big-vs">VS</label>
+        <div class="play player2-gamefield"></div>
+      </div>
+      <div class="game-buttons">
+        <button class="play-button button player2-stone-button">Pedra</button>
+        <button class="play-button button player2-paper-button">Papel</button>
+        <button class="play-button button player2-scissors-button">Tesoura</button>
+      </div>
+    </section>
+    <section class="menu-box">
+      <button class="start-button button">Iniciar</button>
+      <button class="reset-button button">Resetar</button>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
